@@ -1,0 +1,54 @@
+main()
+{
+	int aa2 = -14;
+	double my2Double = +11.2;
+	elm myElement = "jedi";
+	elm yourElement = 31;
+	string	myFancyStr = "@@@19###??161 FERHAT";
+	set _mySet = {aa2, my2Double, myFancyStr };
+	set _yourSet = {"Ankara", 11.2, aa2};	
+	if(aa2 == 11)
+	{
+		_mySet ++ 14;
+		_mySet -- aa2;
+		set _ourSet1 = _mySet U _yourSet;
+		set _ourSet2 = _mySet ^ _yourSet;
+		set _ourSet3 = _mySet \ _yourSet; 		
+	}
+	if(_mySet C _yourSet)
+	{
+		# Do Nothing :))
+	}
+	else if(_mySet D _yourSet)
+	{
+		# else while() if() for(). Will it print the tokens or just say COMMENT?
+	}
+	else if(!(aa2 E _mySet))
+	{
+		_mySet ++ aa2;
+	}
+	else if(_yourSet @ _mySet)
+	{
+		delete _mySet;
+	}
+	else if(yourElement E _mySet)
+	{
+		print("HOW IS YOUR ELEMENT IS A MEMBER OF MY $ET?");
+	}
+	for(int counter = 0; counter >= aa2; counter  = counter + 1)
+	{
+		myFancyStr = "I am not fancy anymore.";
+	}
+
+	int sumOfMySet = func_sumOfElements(_mySet);
+	print(sumOfMySet);
+}
+int func_sumOfElements(set _aSet)
+{
+	int sum = 0;
+	for(_aSet: 1: curElement)
+	{
+		sum = sum + curElement;
+	}
+	return sum;
+}

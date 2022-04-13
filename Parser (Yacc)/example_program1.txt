@@ -1,0 +1,17 @@
+main()
+{
+	set _mySet = fread("myFile");
+	int mySetCardinality = n(_mySet);
+	if(mySetCardinality == 0)
+	{
+		print("This set is empty.");
+	}
+	else
+	{
+		for(_mySet : 1 : _oneElementSubset)
+		{
+			print(_oneElementSubset);	# print(_mySet) will display all of the elements in _mySet :)?xd 
+		}
+	}		
+}
+

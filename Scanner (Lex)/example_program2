@@ -1,0 +1,16 @@
+main()
+{
+	int num = 42;	
+	elm strElement =  "baguette";		# string variable type is also fine.
+	set _myFirstSet = {num};	
+	set _mySecondSet = {};	
+	_mySecondSet ++ str;
+	set _mySetsUnion = _myFirstSet U _mySecondSet;
+	double pi = 3.141592653589793;
+	_mySetsUnion ++ pi;
+	print(_mySetsUnion);
+	fwrite(_mySetsUnion, "myFile");
+	delete _myFirstSet;
+	delete _mySecondSet;
+	delete _mySetsUnion;
+}

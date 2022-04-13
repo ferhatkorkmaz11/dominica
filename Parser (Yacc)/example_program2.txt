@@ -1,0 +1,19 @@
+main()
+{
+	int num = 42;	
+	elm strElement =  "baguette";		# string variable type is also fine.
+	set _myFirstSet = {num};	
+	set _mySecondSet = {};			# empty set initialization.
+	_mySecondSet ++ str;			# operation with empty set
+	set _mySetsUnion = _myFirstSet U _mySecondSet;
+	double pi = 3.141592653589793;
+	_mySetsUnion ++ pi;
+	print(_mySetsUnion);			
+	
+	fwrite(_mySetsUnion, "myFile");		# write the content of union set into the path "myFile".
+
+	# memory deallocation
+	delete _myFirstSet;
+	delete _mySecondSet;
+	delete _mySetsUnion;
+}

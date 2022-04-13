@@ -1,0 +1,35 @@
+main()
+{
+	set _mySet = {"Ankara", "Paris", "Kiev", "Moscow", 1453, 1923, 11.11};
+	set _yourSet = {11.11, -42, "Istanbul", "Lille"};
+	set _herSet =  {"Java", "C++l", 58, 2022}; 
+	cartesian((_mySet ^ _yourSet) U _herSet, _yourSet);	# it will print the 2 element tuples as cartesian product one by one.
+	
+	double myweight = 80.5;
+	double myheight	= 1.79;
+	double myBMI = myweight / myheight / myheight;
+	double interestingArithmeticOperation = (myBMI + 1453) * myheight - myweight - myBMI;
+	
+	set _difference	= _mySet \ _yourSet;
+	_difference ++ interestingArithmeticOperation;
+	print(_difference);
+
+	# I wonder what are the two element subsets are ^_^ UwU OwO <=^_^=> Ciko
+	func_printTwoElementSubsets(set _aSet);
+	
+	# memory deallocation
+	delete _difference;
+	delete _mySet;
+	delete _yourSet;
+	delete _herSet; 
+}
+
+# this function will print the two element subsets of the given set.
+int func_printTwoElementsSubsets(set _aSet)
+{
+	for(_aSet: 2: _twoElementSubset)	
+	{
+		print(_twoElementSubset);
+	}
+}
+

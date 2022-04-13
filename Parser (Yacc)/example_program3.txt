@@ -1,0 +1,16 @@
+main()
+{	
+	set _mySetE = fread("myFile", "yourFile");		
+	_mySetE ++ 42;
+	_mySetE ++ "ngl ayran is pretty good";
+	_mySetE ++ 16.12;
+	_mySetE = func_deleteElement(_mySetE, 16.12);
+	print(_mySetE);
+}
+set func_deleteElement(set _Set, elm element)
+{
+	_Set -- element;
+	return _Set;
+	int myInt = 5;
+	print(myInt);
+}
